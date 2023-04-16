@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>See You Next Tuesday - A web service</title>
+    </head>
+
+    <body>
+        <h1>See You Next Tuesday</h1>
+        <p>See You Next Tuesday is a web service that returns the time until the next tuesday</p>
+
+        <h2>Endpoints</h2>
+        <ul>
+            <li>GET <a href="/api/ns">/api/ns</a> - Returns the time until the next tuesday in nanoseconds</li>
+            <p><b>Request</b><br><code>curl -s -X GET "${endpoint}/api/ns"</code></p>
+            <p><b>Response</b><br><code>128512154427300</code></p>
+
+            <li>GET <a href="/api/ms">/api/ms</a> - Returns the time until the next tuesday in milliseconds</li>
+            <p><b>Request</b><br><code>curl -s -X GET "${endpoint}/api/ms"</code></p>
+            <p><b>Response</b><br><code>128425049</code></p>
+
+            <li>GET <a href="/api/s">/api/s</a> - Returns the time until the next tuesday in seconds</li>
+            <p><b>Request</b><br><code>curl -s -X GET "${endpoint}/api/s"</code></p>
+            <p><b>Response</b><br><code>128435</code></p>
+        </ul>
+    </body>
+
+</html>
